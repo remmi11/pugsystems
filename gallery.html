@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<title>Pugs Gallery </title>
+
+
+    <!-- js -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/pig.min.js"></script>
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet">
+	
+
+	
+<style>
+html, body {
+	background-color: gray;
+}
+
+a {
+	color: white;
+}
+ a:hover {
+color: #2fc1ee;
+}
+</style>
+	</head>	
+	<body>
+<header class="header" style="background: #3d3d3d;">
+		<nav class="navbar navbar-inverse">
+			<!--navbar-fixed-top">-->
+			<div class="container-fluid" style="width:1170px margin-left:40px margin-right:40px;">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="img/PUGS LOGO NO BK.png" alt="">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<!--<li class="active"><a href="#">home</a></li>-->
+							<li>
+								<a href="floors.html">floors</a>
+							</li>
+							<li>
+								<a href="#">cabinets</a>
+							</li>
+							<li>
+								<a href="#">shelving</a>
+							</li>
+							<li>
+								<a href="#">overhead</a>
+							</li>
+							<li>
+								<a href="#">contact-us</a>
+							</li>
+						</ul>
+					</div>
+					<span class="navbar-text">
+						<a href="tel:806-220-9934">806-220-9934</a>
+					</span>
+				</div>
+			</nav>
+		</header>
+
+<div class="container-fluid" style="background:#fff margin-bottom:20px margin-top:20px;">
+		<!-- Create a container element for the grid. -->
+<div id="pig"></div>
+</div>
+	<script>
+		var imageData = [
+			{filename: 'img/500/IMG_0049.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0113.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0114.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0132.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0143.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0185.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0187.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0197.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0244.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0250.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0255.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0256.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0260.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0263.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0266.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0268.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_0269.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2502.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2526.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2753.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2787.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2838.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2902.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2903.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_2904.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3103.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3115.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3157.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3158.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3414.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3569.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3634.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3679.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_3680.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4044.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4185.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4189.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4249.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4316.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4322.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4372.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4423.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4447.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4461.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4463.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4495.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4497.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4498.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4499.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4547.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4548.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4673.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4679.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4680.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4684.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4736.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4774.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_4931.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_5053.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_5055.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6539.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6542.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6588.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6626.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6627.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_6736.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7041.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7099.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7102.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7103.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7104.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7132.jpg', aspectRatio: 1.777},
+			{filename: 'img/500/IMG_7133.jpg', aspectRatio: 1.777}
+		];
+
+		var options = {
+		  urlForSize: function(filename, size) {
+			return '/img/' + size + '/' + filename;
+		  },
+		  // ... 
+		};
+
+		var pig = new Pig().enable(imageData);//, options);
+	</script>
+</body>
+</html>

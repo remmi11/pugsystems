@@ -1,0 +1,26 @@
+.modal {
+position: fixed;
+right: o;
+top: 40px;
+}
+.modal-header,
+.btn-custom {
+	background: #12b5d1;
+	color: #FFF;
+	/* margin-right: 10px; */
+}
+.modal-body {
+	background: #fff;
+}
+.popover   {
+	background-color: #e74c3c;
+	color: #ecf0f1;
+	width: 120px;
+}
+.popover.right .arrow:after {
+	border-right-color: #e74c3c;
+}
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}	
