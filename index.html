@@ -10,10 +10,10 @@
 	<!-- Google Analytics Tracking -->
 	<script>
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-99901808-1', 'auto');
 		ga('send', 'pageview');
@@ -44,16 +44,9 @@
 
 	<title>Panhandle Ultimate Garage Systems</title>
 
-	<style>
-		.navbar-brand>img {
-			display: block;
-			height: 80px;
-		}
-	</style>
 </head>
 
 <body>
-
 	<header class="header" style="background: #3d3d3d;">
 		<nav class="navbar navbar-inverse">
 			<!--navbar-fixed-top">-->
@@ -80,14 +73,18 @@
 						<li>
 							<a href="shelving.html">Shelving</a>
 						</li>
-						<!--
-							<li>
-								<a href="#">overhead</a>
-							</li>
-							<li>
-								<a href="#">contact-us</a>
-							</li>
-							-->
+                        <li>
+							<a href="overhead-storage.html">Overhead-Storage</a>
+						</li>
+						<!--<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Other-Services
+						<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="other.html#section1">Overhead Storage</a></li>
+								<li><a href="other.html#section2">Attic Lifts</a></li>
+								<li><a href="other.html#section3">Decorative Concrete</a></li>
+							</ul>
+						</li>-->
 					</ul>
 				</div>
 				<span class="navbar-text">
@@ -96,6 +93,7 @@
 			</div>
 		</nav>
 	</header>
+
 	<!--  Owl Carousel -->
 
 	<div id="owl-demo" class="owl-carousel owl-theme">
@@ -104,226 +102,227 @@
 			<img src="img/flooring-home2.jpg" />
 			<div class="caption"><span style="color: #ff9600">// </span>Flooring that works.</div>
 			<a href="#" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#myModal">
-				<i class="fa fa-hand-pointer-o"></i> Quote Me!</a>
+				<i class="fa fa-hand-o-up"></i> Quote Me!</a>
 		</div>
 
 		<div class="item">
 			<img src="img/cabinets-home.jpg">
 			<div class="caption"><span style="color: #ff9600">// </span>Out of sight. Out of mind.</div>
 			<a href="#" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#myModal">
-				<i class="fa fa-hand-pointer-o"></i> Quote Me!</a>
+				<i class="fa fa-hand-o-up"></i> Quote Me!</a>
 		</div>
 
 		<div class="item">
 			<img src="img/shelving-home.jpg">
 			<div class="caption"><span style="color: #ff9600">// </span>A place for everything.</div>
 			<a href="#" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#myModal">
-				<i class="fa fa-hand-pointer-o"></i> Quote Me!</a>
+				<i class="fa fa-hand-o-up"></i> Quote Me!</a>
 		</div>
 		<div class="item">
 			<img src="img/overhead-home.jpg">
 			<div class="caption"><span style="color: #ff9600">// </span>Up and out of the way.</div>
 			<a href="#" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#myModal">
-				<i class="fa fa-hand-pointer-o"></i> Quote Me!</a>
+				<i class="fa fa-hand-o-up"></i> Quote Me!</a>
 		</div>
-		</div>
+	</div>
 
-		<!-- Modal -->
-		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Contact Form</h4>
-					</div>
-					<div class="modal-body">
-						<form class="form-horizontal" name="commentform" method="post" action="send_form_email_sleep_re.php">
-							<div class="form-group">
-								<label class="control-label col-md-4" for="first_name">First Name</label>
-								<div class="col-md-6">
-									<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-4" for="last_name">Last Name</label>
-								<div class="col-md-6">
-									<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-4" for="email">Email Address</label>
-								<div class="col-md-6 input-group">
-									<span class="input-group-addon">@</span>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-4" for="comment">Question or Comment</label>
-								<div class="col-md-6">
-									<textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-md-6">
-									<button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- End of Modal body -->
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+					<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+					<h4 class="modal-title">Quote Form</h4>
 				</div>
-				<!-- End of Modal content -->
+				<div class="modal-body">
+					<form class="form-horizontal" name="commentform" method="post" action="send_form_email_sleep_re.php">
+						<div class="form-group">
+							<label class="control-label col-md-4" for="first_name">First Name</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-4" for="last_name">Last Name</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-4" for="email">Email Address</label>
+							<div class="col-md-6 input-group">
+								<span class="input-group-addon">@</span>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-4" for="comment">Any additional questions or concerns...</label>
+							<div class="col-md-6">
+								<textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-6">
+								<button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- End of Modal body -->
 			</div>
-			<!-- End of Modal dialog -->
+			<!-- End of Modal content -->
 		</div>
-		<!-- End of Modal -->
+		<!-- End of Modal dialog -->
+	</div>
+	<!-- End of Modal -->
 
-		<div class="container-fluid" style="background:#fff margin-bottom:20px margin-top:20px;">
-			<h2 class="blueTextOverride">Our Services...</h2>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="thumbnail">
-						<img src="img/shelving-home.jpg" alt="shelving">
-						<div class="service-caption">
-							<p>Shelving</p>
-						</div>
-						<div class="caption-small">
-							<p>Garage shelving in Amarillo looks more than promising with Monkey Bars products. With all the benefits, there is only
-								room for “pros” of choosing the best quality available.</p>
-						</div>
-						<a href="http://pugsystems.com/shelving.html" role="button">
-							<div class="panel-footer">
-								More Info!
-							</div>
-						</a>
+	<div class="container-fluid" style="background:#fff margin-bottom:20px margin-top:20px;">
+		<h2 class="ourservices">Our Services...</h2>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="thumbnail">
+					<img src="img/shelving-home.jpg" alt="shelving">
+					<div class="service-caption">
+						<p>Shelving</p>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="thumbnail">
-						<img src="img/cabinets-home.jpg" alt="cabinets">
-						<div class="service-caption">
-							<p>Cabinets</p>
-						</div>
-						<div class="caption-small">
-							<p>We provide you with the best cabinets available with other complimentary products that supply the best storage plan
-								for your needs. Contact us today for a free quote!</p>
-						</div>
-						<a href="cabinets.html" role="button">
-							<div class="panel-footer">
-								More Info!
-							</div>
-						</a>
+					<div class="caption-small">
+						<p>Garage shelving in Amarillo looks more than promising with Monkey Bars products. With all the benefits, there is only
+							room for “pros” of choosing the best quality available.</p>
 					</div>
+					<a href="http://pugsystems.com/shelving.html" role="button">
+						<div class="panel-footer">
+							More Info!
+						</div>
+					</a>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="thumbnail">
-						<img src="img/flooring-services.jpg" alt="flooring">
-						<div class="service-caption">
-							<p>Floors</p>
-						</div>
-						<div class="caption-small">
-							<p>Make your garage floor a heaven to walk on and sight to behold when your garage door opens. Our exceptional flooring
-								options are preferred over any other floor.</p>
-						</div>
-						<a href="floors.html" role="button">
-							<div class="panel-footer">More Info!</div>
-						</a>
-						</a>
+			<div class="col-sm-6">
+				<div class="thumbnail">
+					<img src="img/cabinets-home.jpg" alt="cabinets">
+					<div class="service-caption">
+						<p>Cabinets</p>
 					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="thumbnail">
-						<img src="img/overhead-home.jpg" alt="overhead">
-						<div class="service-caption">
-							<p>Overhead</p>
-						</div>
-						<div class="caption-small">
-							<p>Garage overhead storage in Amarillo grants local homeowners the option of storing seasonal items above and out of
-								the way of commonly used paths.</p>
-						</div>
-						<a href="#" role="button">
-							<div class="panel-footer">
-								More Info!
-							</div>
-						</a>
-						</a>
+					<div class="caption-small">
+						<p>We provide you with the best cabinets available with other complimentary products that supply the best storage plan
+							for your needs. Contact us today for a free quote!</p>
 					</div>
+					<a href="cabinets.html" role="button">
+						<div class="panel-footer">
+							More Info!
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
-
-
-		<div id="call_us">
-			<a href="tel:1-806-220-9934">
-<img src="img/phone_mobile.png">
-</a>
-		</div>
-
-
-		<div id="section1" class="container-fluid">
-			<h1>Still not convinced?</h1>
-			<p>Browse our current and past projects to get a better idea of the kind of transformations Panhandle Ultimate Garage Solutions
-				can do for you.</p>
-			<a href="https://goo.gl/photos/rSFXkLQUdRYzzpQ7A" target="_blank" class="gallery-btn"><i class="fa fa-camera-retro fa-5x"></i> </a>
-		</div>
-
-
-		<!-- footer -->
-		<footer class="footer" style="background: #3d3d3d;">
-			<div class="row">
-				<div class="large-4 columns">
-					<h5>
-						<a href="#" id="footer-text">2017 © Panhandle Ultimate Garage Systems, LLC.</a>
-					</h5>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="thumbnail">
+					<img src="img/flooring-services.jpg" alt="flooring">
+					<div class="service-caption">
+						<p>Floors</p>
+					</div>
+					<div class="caption-small">
+						<p>Make your garage floor a heaven to walk on and sight to behold when your garage door opens. Our exceptional flooring
+							options are preferred over any other floor.</p>
+					</div>
+					<a href="floors.html" role="button">
+						<div class="panel-footer">More Info!</div>
+					</a>
+					</a>
 				</div>
 			</div>
-		</footer>
 
-		<!-- vendors -->
-		<!--
+			<div class="col-sm-6">
+				<div class="thumbnail">
+					<img src="img/overhead-home.jpg" alt="overhead">
+					<div class="service-caption">
+						<p>Overhead</p>
+					</div>
+					<div class="caption-small">
+						<p>Garage overhead storage in Amarillo grants local homeowners the option of storing seasonal items above and out of the
+							way of commonly used paths.</p>
+					</div>
+					<a href="#" role="button">
+						<div class="panel-footer">
+							More Info!
+						</div>
+					</a>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="call_us">
+		<a href="tel:1-806-220-9934">
+			<img src="img/phone_mobile.png">
+		</a>
+	</div>
+
+
+	<div id="see-galleries" class="container-fluid">
+		<h1>Still not convinced?</h1>
+		<p>Browse our current and past projects to get a better idea of the kind of transformations Panhandle Ultimate Garage Solutions
+			can do for you.</p>
+		<a href="https://goo.gl/photos/rSFXkLQUdRYzzpQ7A" target="_blank" class="gallery-btn"><i class="fa fa-camera-retro fa-5x"></i> </a>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer" style="background: #3d3d3d;">
+		<div class="row">
+			<div class="large-4 columns">
+				<h5>
+					<a href="#" id="footer-text">2017 © Panhandle Ultimate Garage Systems, LLC.</a>
+				</h5>
+			</div>
+		</div>
+	</footer>
+
+	<!-- vendors -->
+	<!--
 <script src="assets/vendors/highlight.js"></script>
 <script src="assets/js/app.js"></script>
 -->
 
-		<script>
-			$(document).ready(function () {
+	<script>
+		$(document).ready(function () {
 
-				$("#owl-demo").owlCarousel({
-					items: 3,
-					navigation: false, // Show next and prev buttons
-					slideSpeed: 300,
-					paginationSpeed: 400,
-					singleItem: true,
-					loop: true,
-					margin: 10,
-					autoPlay: true,
-					responsive: {
-						0: {
-							items: 1,
-							nav: true
-						},
-						768: {
-							items: 3,
-							nav: true,
-							loop: false
-						}
+			$("#owl-demo").owlCarousel({
+				items: 3,
+				navigation: false, // Show next and prev buttons
+				slideSpeed: 300,
+				paginationSpeed: 400,
+				singleItem: true,
+				loop: true,
+				margin: 10,
+				autoPlay: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					768: {
+						items: 3,
+						nav: true,
+						loop: false
 					}
-				})
+				}
+			})
+		});
+
+
+		if ('serviceWorker' in navigator) {
+			console.log("Will service worker register?");
+			navigator.serviceWorker.register('service-worker.js').then(function (reg) {
+				console.log("Yes it did.");
+			}).catch(function (err) {
+				console.log("No it didn't. This happened: ", err)
 			});
-
-
-			if ('serviceWorker' in navigator) {
-				console.log("Will service worker register?");
-				navigator.serviceWorker.register('service-worker.js').then(function (reg) {
-					console.log("Yes it did.");
-				}).catch(function (err) {
-					console.log("No it didn't. This happened: ", err)
-				});
-			}
-		</script>
+		}
+	</script>
 </body>
 
 </html>
